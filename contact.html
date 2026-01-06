@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Contacte | Projecte Web M4</title>
+
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/css/main.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header id="header" class="header sticky-top">
+      <div class="container d-flex justify-content-between align-items-center">
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+          <h1 class="sitename">Projecte Web</h1>
+        </a>
+
+        <!-- Menú de navegació -->
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html">Inici</a></li>
+            <li><a href="about.html">Sobre mi</a></li>
+            <li><a href="services.html">Formació acadèmica</a></li>
+            <li><a href="gallery.html">Galeria</a></li>
+            <li><a href="contact.html" class="active">Contacte</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="section">
+        <div class="container">
+          <div class="card-section">
+            <h2>Contacte professional</h2>
+
+            <p>
+              Si estàs interessat/da en el meu perfil o vols contactar amb mi
+              per oportunitats formatives o professionals, pots utilitzar el
+              següent formulari.
+            </p>
+
+            <!-- Formulari -->
+            <form class="form-contacto">
+              <!-- Nom -->
+              <div class="mb-3">
+                <label for="nom">Nom</label>
+                <input
+                  type="text"
+                  id="nom"
+                  name="nom"
+                  class="form-control"
+                  required
+                />
+              </div>
+
+              <!-- Correu electrònic -->
+              <div class="mb-3">
+                <label for="email">Correu electrònic</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-control"
+                  pattern=".+@.+\..+"
+                  required
+                />
+              </div>
+
+              <!-- Telèfon -->
+              <div class="mb-3">
+                <label for="telefon">Telèfon</label>
+                <input
+                  type="tel"
+                  id="telefon"
+                  name="telefon"
+                  class="form-control"
+                  pattern="[0-9]{9}"
+                  required
+                />
+              </div>
+
+              <!-- Missatge -->
+              <div class="mb-3">
+                <label for="missatge">Missatge</label>
+                <textarea
+                  id="missatge"
+                  name="missatge"
+                  class="form-control"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+
+              <!-- Botó -->
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+      <div class="container text-center">
+        <p>© 2025 - Projecte Web M4</p>
+        <p>Plantilla base: Mamba (BootstrapMade)</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

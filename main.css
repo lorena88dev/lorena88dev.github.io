@@ -1,0 +1,252 @@
+/* ESTILS GENERALS */
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #2e2e2e;
+  background-color: #f3f3f7;
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  padding: 50px 0;
+  background-color: #f6f5fa;
+}
+
+.section:nth-child(even) {
+  background-color: #ffffff;
+}
+/* HEADER I MENÚ */
+
+.header {
+  background-color: #6a5acd;
+  padding: 30px 0;
+}
+
+.header .sitename {
+  color: #ffffff;
+  margin: 0;
+  font-weight: 600;
+}
+
+.navmenu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.navmenu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.05rem;
+  position: relative;
+}
+
+.navmenu a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -6px;
+  background-color: #e6ddff;
+  transition: width 0.3s ease;
+}
+
+.navmenu a:hover::after,
+.navmenu a.active::after {
+  width: 100%;
+}
+.logo {
+  text-decoration: none;
+}
+
+h2 {
+  color: #6a5acd;
+  margin-bottom: 20px;
+}
+
+h4 {
+  color: #b39ddb;
+  margin-top: 30px;
+}
+
+progress {
+  width: 100%;
+  height: 18px;
+  accent-color: #6a5acd;
+}
+
+/* ANIMACIONS */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+ul li {
+  margin-bottom: 8px;
+  transition: transform 0.2s ease;
+}
+
+ul li:hover {
+  transform: translateX(6px);
+}
+
+/* CAIXES DE CONTINGUT*/
+
+.card-section {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(106, 90, 205, 0.08);
+}
+
+.section {
+  animation: fadeUp 0.8s ease-in-out;
+}
+/* FOOTER */
+
+.footer {
+  background-color: #5a4fcf;
+  color: #ffffff;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+.footer p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+  opacity: 0.9;
+  font-weight: bold;
+}
+
+/* TAULA DE SERVEIS*/
+
+.tabla-servicios {
+  width: 100%;
+  margin-top: 20px;
+  background-color: #ffffff;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.tabla-servicios th {
+  background-color: #6a5acd;
+  color: #ffffff;
+  padding: 12px;
+}
+
+.tabla-servicios td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.tabla-servicios tr:nth-child(even) {
+  background-color: #f6f5fa;
+}
+
+/* GALERiA DE IMATGES */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.gallery img {
+  border-radius: 14px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.gallery img:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 15px 30px rgba(106, 90, 205, 0.35);
+}
+/* FORMULARI DE CONTACTE */
+
+.form-contacto {
+  max-width: 600px;
+  margin: auto;
+}
+
+.btn-primary {
+  background-color: #6a5acd;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #b39ddb;
+  transform: translateY(-2px);
+}
+/* MEDIA QUERIES */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .navmenu ul {
+    gap: 10px;
+  }
+  main {
+    margin-top: 20px;
+  }
+
+  .section {
+    padding-top: 40px;
+    animation: none;
+  }
+}
+
+/* MÒBIL */
+@media (max-width: 768px) {
+  .header {
+    padding: 15px 0;
+  }
+
+  .header .container-fluid {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .sitename {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .navmenu ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .navmenu a::after {
+    bottom: -4px;
+  }
+}
+@media (max-width: 768px) {
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 18px;
+  }
+}
