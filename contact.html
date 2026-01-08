@@ -6,40 +6,59 @@
 
     <title>Contacte | Projecte Web M4</title>
 
+    <!-- CSS -->
     <link
       href="assets/vendor/bootstrap/css/bootstrap.min.css"
       rel="stylesheet"
     />
     <link href="assets/css/main.css" rel="stylesheet" />
+
+    <!-- Meta descripció -->
+    <meta
+      name="description"
+      content="Pàgina de contacte professional de Lorena Rodríguez Guzmán, estudiant d'ASIX i desenvolupadora web en formació."
+    />
   </head>
 
   <body>
     <!-- Header -->
-    <header id="header" class="header sticky-top">
+    <header id="header" class="header sticky-top bg-light shadow-sm">
       <div class="container d-flex justify-content-between align-items-center">
         <!-- Logo -->
-        <a href="index.html" class="logo">
-          <h1 class="sitename">Projecte Web</h1>
+        <a href="index.html" class="logo text-decoration-none">
+          <span class="h4 m-0 text-dark">Projecte Web</span>
         </a>
 
         <!-- Menú de navegació -->
         <nav id="navmenu" class="navmenu">
-          <ul>
-            <li><a href="index.html">Inici</a></li>
-            <li><a href="about.html">Sobre mi</a></li>
-            <li><a href="services.html">Formació acadèmica</a></li>
-            <li><a href="gallery.html">Galeria</a></li>
-            <li><a href="contact.html" class="active">Contacte</a></li>
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inici</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Sobre mi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Formació acadèmica</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Galeria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Contacte</a>
+            </li>
           </ul>
         </nav>
       </div>
     </header>
 
+    <!-- Contingut principal -->
     <main id="main">
-      <section class="section">
+      <section class="section py-5">
         <div class="container">
-          <div class="card-section">
-            <h2>Contacte professional</h2>
+          <div class="card-section p-4 shadow-sm rounded bg-white">
+
+            <h1 class="mb-3">Contacte professional</h1>
 
             <p>
               Si estàs interessat/da en el meu perfil o vols contactar amb mi
@@ -48,40 +67,42 @@
             </p>
 
             <!-- Formulari -->
-            <form class="form-contacto">
+            <form class="form-contacto" action="#" method="post">
               <!-- Nom -->
               <div class="mb-3">
-                <label for="nom">Nom</label>
+                <label for="nom" class="form-label">Nom</label>
                 <input
                   type="text"
                   id="nom"
                   name="nom"
                   class="form-control"
+                  placeholder="Introdueix el teu nom"
                   required
                 />
               </div>
 
               <!-- Correu electrònic -->
               <div class="mb-3">
-                <label for="email">Correu electrònic</label>
+                <label for="email" class="form-label">Correu electrònic</label>
                 <input
                   type="email"
                   id="email"
                   name="email"
                   class="form-control"
-                  pattern=".+@.+\..+"
+                  placeholder="exemple@correu.com"
                   required
                 />
               </div>
 
               <!-- Telèfon -->
               <div class="mb-3">
-                <label for="telefon">Telèfon</label>
+                <label for="telefon" class="form-label">Telèfon</label>
                 <input
                   type="tel"
                   id="telefon"
                   name="telefon"
                   class="form-control"
+                  placeholder="123456789"
                   pattern="[0-9]{9}"
                   required
                 />
@@ -89,29 +110,39 @@
 
               <!-- Missatge -->
               <div class="mb-3">
-                <label for="missatge">Missatge</label>
+                <label for="missatge" class="form-label">Missatge</label>
                 <textarea
                   id="missatge"
                   name="missatge"
                   class="form-control"
                   rows="4"
+                  placeholder="Escriu el teu missatge"
                   required
                 ></textarea>
               </div>
 
               <!-- Botó -->
-              <button type="submit" class="btn btn-primary">Enviar</button>
+              <button
+                type="submit"
+                class="btn btn-primary"
+                aria-label="Enviar formulari de contacte"
+              >
+                Enviar
+              </button>
             </form>
+
           </div>
         </div>
       </section>
     </main>
 
     <!-- Footer -->
-    <footer id="footer" class="footer">
+    <footer id="footer" class="footer bg-light py-3 mt-5">
       <div class="container text-center">
-        <p>© 2025 - Projecte Web M4</p>
-        <p>Plantilla base: Mamba (BootstrapMade)</p>
+        <p class="mb-1">© 2025 - Projecte Web M4</p>
+        <p class="mb-0 text-muted">
+          Plantilla base: Mamba (BootstrapMade)
+        </p>
       </div>
     </footer>
 
