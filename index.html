@@ -6,47 +6,69 @@
 
     <title>Inici | Projecte Web M4</title>
 
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/main.css" rel="stylesheet" >
+    <!-- CSS -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/main.css" rel="stylesheet" />
+
+    <!-- Meta descripció -->
+    <meta
+      name="description"
+      content="Portfoli personal de Lorena Rodríguez Guzmán, estudiant d'ASIX i desenvolupadora web en formació."
+    />
   </head>
 
   <body>
     <!-- Header -->
-    <header id="header" class="header sticky-top">
+    <header id="header" class="header sticky-top bg-light shadow-sm">
       <div class="container d-flex justify-content-between align-items-center">
         <!-- Logo -->
-        <a href="index.html" class="logo">
-          <h1 class="sitename">Projecte Web</h1>
+        <a href="index.html" class="logo text-decoration-none">
+          <span class="h4 m-0 text-dark">Projecte Web</span>
         </a>
 
+        <!-- Navegació -->
         <nav id="navmenu" class="navmenu">
-          <ul>
-            <li><a href="index.html" class="active">Inici</a></li>
-            <li><a href="about.html">Sobre mi</a></li>
-            <li><a href="services.html">Formació acadèmica</a></li>
-            <li><a href="gallery.html">Galeria</a></li>
-            <li><a href="contact.html">Contacte</a></li>
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Inici</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Sobre mi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Formació acadèmica</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Galeria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contacte</a>
+            </li>
           </ul>
         </nav>
       </div>
     </header>
 
+    <!-- Contingut principal -->
     <main id="main">
-      <section class="section">
+      <section class="section py-5">
         <div class="container">
-          <div class="card-section">
-            <h2>Lorena Rodríguez Guzmán</h2>
-            <h4>Estudiant d'ASIX i Desenvolupadora web en formació</h4>
+          <div class="card-section p-4 shadow-sm rounded bg-white">
+
+            <h1 class="mb-2">Lorena Rodríguez Guzmán</h1>
+            <h4 class="text-muted mb-3">
+              Estudiant d'ASIX i desenvolupadora web en formació
+            </h4>
 
             <p>
-              Estudiant del curs de formació professional de grau superior de
-              Administració de Sistemes Informatics i en Xarxa
+              Estudiant del cicle formatiu de grau superior d’Administració de
+              Sistemes Informàtics en Xarxa.
             </p>
 
-            <div class="row">
+            <div class="row mt-4">
               <div class="col-md-6">
                 <h5>Dades personals</h5>
-                <ul>
+                <ul class="list-unstyled">
                   <li><strong>Nom:</strong> Lorena Rodríguez Guzmán</li>
                   <li><strong>Edat:</strong> 37 anys</li>
                   <li>
@@ -54,20 +76,22 @@
                   </li>
                 </ul>
               </div>
+
+              <div class="col-md-6">
+                <h5>Objectiu professional</h5>
+                <p>
+                  Continuar formant-me i adquirir experiència professional en el
+                  sector tecnològic.
+                </p>
+              </div>
             </div>
 
-            <div class="col-md-6">
-              <h5>Objectiu professional</h5>
-              <p>
-                Continuar formant-me i adquirir experiència professional en el
-                sector tecnològic.
-              </p>
-            </div>
-            <!-- BOTÓ CURRÍCULUM -->
+            <!-- Botó currículum -->
             <a
               href="assets/media/cv.pdf"
               target="_blank"
               class="btn btn-primary mt-4"
+              aria-label="Descarregar currículum en format PDF"
             >
               Descarregar currículum
             </a>
@@ -77,10 +101,12 @@
     </main>
 
     <!-- Footer -->
-    <footer id="footer" class="footer">
+    <footer id="footer" class="footer bg-light py-3 mt-5">
       <div class="container text-center">
-        <p>© 2025 - Projecte Web M4</p>
-        <p>Plantilla base: Mamba (BootstrapMade)</p>
+        <p class="mb-1">© 2025 - Projecte Web M4</p>
+        <p class="mb-0 text-muted">
+          Plantilla base: Mamba (BootstrapMade)
+        </p>
       </div>
     </footer>
 
