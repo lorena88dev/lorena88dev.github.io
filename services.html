@@ -1,140 +1,102 @@
 <!DOCTYPE html>
 <html lang="ca">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Formació acadèmica | Projecte Web M4</title>
+    <title>Serveis | Projecte Web M4</title>
 
-    <!-- CSS -->
     <link
       href="assets/vendor/bootstrap/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link href="assets/css/main.css" rel="stylesheet" />
-
-    <!-- Meta descripció -->
-    <meta
-      name="description"
-      content="Formació acadèmica i experiència professional de Lorena Rodríguez Guzmán, estudiant d'ASIX."
-    />
+      rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
   </head>
 
   <body>
     <!-- Header -->
-    <header id="header" class="header sticky-top bg-light shadow-sm">
+    <header id="header" class="header sticky-top">
       <div class="container d-flex justify-content-between align-items-center">
         <!-- Logo -->
-        <a href="index.html" class="logo text-decoration-none">
-          <span class="h4 m-0 text-dark">Projecte Web</span>
+        <a href="index.html" class="logo">
+          <h1 class="sitename">Projecte Web</h1>
         </a>
 
         <!-- Menú de navegació -->
         <nav id="navmenu" class="navmenu">
-          <ul class="nav">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Inici</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">Sobre mi</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="services.html"
-                >Formació acadèmica</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="gallery.html">Galeria</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contacte</a>
-            </li>
+          <ul>
+            <li><a href="index.html">Inici</a></li>
+            <li><a href="about.html">Sobre mi</a></li>
+            <li><a href="services.html" class="active">Formació acadèmica</a></li>
+            <li><a href="gallery.html">Galeria</a></li>
+            <li><a href="contact.html">Contacte</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <!-- Contingut principal -->
     <main id="main">
-      <section class="section py-5">
+      <!-- Secció Serveis -->
+      <section class="section">
         <div class="container">
-          <div class="card-section p-4 shadow-sm rounded bg-white">
+          <h2>Formació i experiència</h2>
 
-            <h1 class="mb-3">Formació i experiència</h1>
+          <p>
+            A continuació es mostra una taula amb la formació acadèmica i
+            experiència professional, estructurada mitjançant HTML i estilitzada
+            amb CSS.
+          </p>
 
-            <p>
-              A continuació es mostra una taula amb la meva formació acadèmica i
-              experiència professional, estructurada mitjançant HTML i
-              estilitzada amb CSS.
-            </p>
-
-            <!-- Taula -->
-            <div class="table-responsive mt-4">
-              <table class="table table-bordered table-striped">
-                <thead class="table-light">
-                  <tr>
-                    <th scope="col">Any</th>
-                    <th scope="col">Formació / Experiència</th>
-                    <th scope="col">Centre / Empresa</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>2025</td>
-                    <td>
-                      CFGS Administració de Sistemes Informàtics en Xarxa (ASIX)
-                    </td>
-                    <td>IES Eugeni d’Ors (Vilafranca del Penedès)</td>
-                  </tr>
-                  <tr>
-                    <td>2020</td>
-                    <td>Pràctiques formatives</td>
-                    <td>XTA</td>
-                  </tr>
-                  <tr>
-                    <td>2018</td>
-                    <td>
-                      CFGM Sistemes Microinformàtics i Xarxes (SMX)
-                    </td>
-                    <td>IES Eugeni d’Ors (Vilafranca del Penedès)</td>
-                  </tr>
-                  <tr>
-                    <td>2012</td>
-                    <td>
-                      Curs de preparació per a la prova d’accés a CFGS
-                    </td>
-                    <td>IES El Foix</td>
-                  </tr>
-                  <tr>
-                    <td>2004</td>
-                    <td>Educació Secundària Obligatòria (ESO)</td>
-                    <td>IES El Foix</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <!-- Altres coneixements -->
-            <h4 class="mt-4">Altres coneixements</h4>
-            <ul>
-              <li>HTML5 i CSS3</li>
-              <li>Bootstrap</li>
-              <li>Disseny web responsive</li>
-              <li>Estructures de projectes web</li>
-            </ul>
-
-          </div>
-        </div>
-      </section>
-    </main>
+          <!-- Taula de serveis -->
+          <table class="tabla-servicios">
+  <thead>
+    <tr>
+      <th>Any</th>
+      <th>Formació / Experiència</th>
+      <th>Centre / Empresa</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2025</td>
+      <td>CFGS Administració de Sistemes en Xarxa</td>
+      <td>IES Eugeni d'Ors Vilafranca</td>
+    </tr>
+    <tr>
+      <td>2020</td>
+      <td>Pràctiques formatives</td>
+      <td>XTA </td>
+    </tr>
+    <tr>
+      <td>2018</td>
+      <td>CFGM Sistemes Microinformatics i en xarxa</td>
+      <td>IES Eugeni d'Ors Vilafranca</td>
+    </tr>
+    <tr>
+      <td>2012</td>
+      <td>Curs Prova D'accés Cicles Formatius Grau Superior</td>
+      <td>IES El Foix</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>ESO</td>
+      <td>IES El Foix</td>
+    </tr>
+  </tbody>
+</table>
+<h4>Altres coneixements</h4>
+<ul>
+  <li>HTML5 i CSS3</li>
+  <li>Bootstrap</li>
+  <li>Disseny responsive</li>
+  <li>Estructures de projectes web</li>
+</ul>
+</div>
 
     <!-- Footer -->
-    <footer id="footer" class="footer bg-light py-3 mt-5">
+    <footer id="footer" class="footer">
       <div class="container text-center">
-        <p class="mb-1">© 2025 - Projecte Web M4</p>
-        <p class="mb-0 text-muted">
-          Plantilla base: Mamba (BootstrapMade)
-        </p>
+        <p>© 2025 - Projecte Web M4</p>
+        <p>Plantilla base: Mamba (BootstrapMade)</p>
       </div>
     </footer>
 
