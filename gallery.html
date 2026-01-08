@@ -6,80 +6,102 @@
 
     <title>Galeria | Projecte Web M4</title>
 
+    <!-- CSS -->
     <link
       href="assets/vendor/bootstrap/css/bootstrap.min.css"
       rel="stylesheet"
     />
     <link href="assets/css/main.css" rel="stylesheet" />
+
+    <!-- Meta descripció -->
+    <meta
+      name="description"
+      content="Galeria d’imatges i nivell de competència en HTML, CSS i Bootstrap del projecte web M4."
+    />
   </head>
 
   <body>
     <!-- Header -->
-    <header id="header" class="header sticky-top">
+    <header id="header" class="header sticky-top bg-light shadow-sm">
       <div class="container d-flex justify-content-between align-items-center">
         <!-- Logo -->
-        <a href="index.html" class="logo">
-          <h1 class="sitename">Projecte Web</h1>
+        <a href="index.html" class="logo text-decoration-none">
+          <span class="h4 m-0 text-dark">Projecte Web</span>
         </a>
 
         <!-- Menú de navegació -->
         <nav id="navmenu" class="navmenu">
-          <ul>
-            <li><a href="index.html">Inici</a></li>
-            <li><a href="about.html">Sobre mi</a></li>
-            <li><a href="services.html">Formació acadèmica</a></li>
-            <li><a href="gallery.html" class="active">Galeria</a></li>
-            <li><a href="contact.html">Contacte</a></li>
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inici</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Sobre mi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Formació acadèmica</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="gallery.html">Galeria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contacte</a>
+            </li>
           </ul>
         </nav>
       </div>
     </header>
 
+    <!-- Contingut principal -->
     <main id="main">
-      <!-- Secció Galeria -->
-      <section class="section">
+      <section class="section py-5">
         <div class="container">
-          <div class="card-section">
-          <h2>Galeria d’imatges</h2>
+          <div class="card-section p-4 shadow-sm rounded bg-white">
 
-          <p>
-            Aquesta galeria ha estat creada utilitzant
-            <strong>CSS Grid</strong>, permetent organitzar les imatges de forma
-            responsive.
-          </p>
+            <h1 class="mb-3">Galeria d’imatges</h1>
 
-          <!-- Galeria -->
-          <div class="gallery">
-            <img src="assets/img/imatge1.png" alt="Imatge 1" />
-            <img src="assets/img/imatge3.jpg" alt="Imatge 2" />
-            <img src="assets/img/imatge6.jpg" alt="Imatge 3" />
-            <img src="assets/img/imatge2.png" alt="Imatge 4" />
-            <img src="assets/img/imatge5.jpg" alt="Imatge 5" />
-            <img src="assets/img/imatge4.jpg" alt="Imatge 6" />
-          </div>
-          <br />
-          <div class="competencia">
-            <h4>Nivell de competència</h4>
+            <p>
+              Aquesta galeria ha estat creada utilitzant
+              <strong>CSS Grid</strong>, permetent organitzar les imatges de
+              manera responsive segons la mida de la pantalla.
+            </p>
 
-            <p>HTML</p>
-            <progress value="50" max="100"></progress>
+            <!-- Galeria -->
+            <div class="gallery my-4">
+              <img src="assets/img/imatge1.png" alt="Imatge representativa 1" />
+              <img src="assets/img/imatge3.jpg" alt="Imatge representativa 2" />
+              <img src="assets/img/imatge6.jpg" alt="Imatge representativa 3" />
+              <img src="assets/img/imatge2.png" alt="Imatge representativa 4" />
+              <img src="assets/img/imatge5.jpg" alt="Imatge representativa 5" />
+              <img src="assets/img/imatge4.jpg" alt="Imatge representativa 6" />
+            </div>
 
-            <p>CSS</p>
-            <progress value="50" max="100"></progress>
+            <!-- Competències -->
+            <div class="competencia mt-4">
+              <h4>Nivell de competència</h4>
 
-            <p>Bootstrap</p>
-            <progress value="40" max="100"></progress>
+              <label for="html">HTML</label>
+              <progress id="html" value="50" max="100">50%</progress>
+
+              <label for="css" class="mt-2 d-block">CSS</label>
+              <progress id="css" value="50" max="100">50%</progress>
+
+              <label for="bootstrap" class="mt-2 d-block">Bootstrap</label>
+              <progress id="bootstrap" value="40" max="100">40%</progress>
+            </div>
+
           </div>
         </div>
-      </div>
       </section>
     </main>
 
     <!-- Footer -->
-    <footer id="footer" class="footer">
+    <footer id="footer" class="footer bg-light py-3 mt-5">
       <div class="container text-center">
-        <p>© 2025 - Projecte Web M4</p>
-        <p>Plantilla base: Mamba (BootstrapMade)</p>
+        <p class="mb-1">© 2025 - Projecte Web M4</p>
+        <p class="mb-0 text-muted">
+          Plantilla base: Mamba (BootstrapMade)
+        </p>
       </div>
     </footer>
 
